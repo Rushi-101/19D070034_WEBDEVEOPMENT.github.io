@@ -16,29 +16,74 @@ background-color:#100;
 h1,h3,p {
 color:white;
 }
+h1 {
+text-shadow: 6px 6px 10px grey;
+}
+img{
+transition: width 2s height 2s transform 2s;
+}
+img:hover{
+width: 450px;
+height: 500px;
+transform: rotate(360deg);
+}
+h3{
+margin: 10px;
+padding: 5px;
+}
+p{
+margin-left: 15px;
+}
+h3.inset{
+border-style: inset;
+}
+h3.outset{
+border-style: outset;
+}
+h3.dotted{
+border-style: dotted;
+}
+h3.dashed{
+border-style: dashed;
+}
+
+a.one {
+  display: block inline;
+  padding: 8px;
+  background-color: lightblue;
+}
+li {
+display: inline;
+}
 </style>
 </head>
 <body>
-
-<h1 style="text-align:center; color:blue;">Welcome to the home page of Rushikesh J. Metkar</h1>
-<img src="rushi.jfif" class="center" width="450" height="500">
+<ul>
+  <li><a href="#department" class="one">Department</a></li>
+  <li><a href="#hobbies" class="one">Hobbies</a></li>
+  <li><a href="#ambitions" class="one">Ambitions</a></li>
+  <li><a href="#otherinterests" class="one">Other Interests</a></li>
+</ul>
 <hr>
-<h3 style="background-color:blue">Department</h3>
+<h1 style="text-align:center; color:blue;">Welcome to the home page of Rushikesh J. Metkar</h1>
+<img src="rushi.jfif" class="center" width="300" height="350">
+<hr>
+<h3 style="background-color:blue" class="inset" id="department">Department</h3>
 <p>Currently I'm first year UG student at <b>Electrical Engineering Department</b> in <b>IIT Bombay</b></p>
 <hr>
-<h3 style="background-color:blue">Hobbies</h3>
+<h3 style="background-color:blue" class="outset" id="hobbies">Hobbies</h3>
 <p><ul style="color:white"><li>Being an Electrical engineer I'm a tech enthusiast. So whenever I am free I utilize my time to explore tech related stuff.</li><li>
 In sports I'm a Rohit Sharma fan, and thus I love to watchand play cricket. Also Squash is yet another sport of my interest which I had taken as NSO in the First year.</li><li>
 Also I have a keen interest in listening songs.</li></ul>
 </p><hr>
-<h3 style="background-color:blue">Ambitions</h3>
+<h3 style="background-color:blue" class="dotted" id="ambitions">Ambitions</h3>
 <p>A famous quote is that <b><i>"Great ambition is the passion of a great character."</i></b><br>
 Working as an electrical engineer can allow me to make life easier for others and allow me to impact society in a positive way.<br>
 Also I participated in <b>ITSP</b> where me and my team had made a device and an app that provides information of any victim who
 has met with an accident, and thus provide medical help to the victim as soon as possible.<br>
 Thus my ambitions in life are to make other's life more easy and become a role model for the society.</p> 
 <hr>
-<h3 style="background-color:blue">Other Interests</h3>
+<h3 style="background-color:blue" class="dashed" id="otherinterests">Other Interests</h3>
 <p>Also I have started a YouTube channel with Two of my wingies. The link of the channel is given below.<br>
 <a href="https://www.youtube.com/channel/UCZkNflm8KwOa-CJWXowRnOg">My YouTube Channel</a>
 <p>In this channel We've described about the life of IIT-B. Although there is only one video but in the future we are going to add some 
