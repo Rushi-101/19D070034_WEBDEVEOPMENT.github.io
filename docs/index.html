@@ -12,52 +12,133 @@
 <style>
 
 body{
-background-color:#100;
-}
-h1,h3,h4,p {
-color:white;
-}
-h1,h2 {
-text-shadow: 10px 10px 15px grey;
+	background-color:#100;
 }
 
-h3{
-margin: 10px;
-padding: 5px;
+h1,h3,h4,p {
+	color:white;
 }
-p{
-margin-left: 15px;
+
+h1 {
+	text-shadow: 10px 10px 15px grey;
 }
-h3.inset{
-border-style: inset;
+
+h3 {
+	margin: 10px;
+	padding: 5px;
 }
-h3.outset{
-border-style: outset;
+
+p {
+	margin-left: 15px;
 }
-h3.dotted{
-border-style: dotted;
-}
-h3.dashed{
-border-style: dashed;
-}
-#oval {
-  border-radius: 25px;
+
+.oval {
+  border-radius: 50px;
   background: #73AD21;
-  width: 150px;
-  height: 50px;  
+  width: 300px;
+  height: 100px;  
   color: white;
   text-align: center;
   font-family:serif;
   font-size:25px;
 }
 #font{
-font-family:serif; font-size:25px;
+	font-family:serif; font-size:25px;
 }
 #textwrap{
-float: left;
-margin-left: 100px;
-margin-right: 100px;
+	float: left;
+	margin-left: 100px;
+	margin-right: 100px;
 }
+
+.burger div{
+	display: none;
+}
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color: red;
+	margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+	.navbar-nav{
+		width: 60%;	
+	}
+}
+
+@media screen and (max-width:768px){
+	body{
+		display:none;
+	}
+}
+
+.textwrap1 {
+	float: left;
+	margin-left: 50px;
+	margin-right:100px; 
+}
+
+.textwrap2 {
+	float: right;
+	margin-left:100px;
+	margin-right:50px; 
+}
+
+
+img.one {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.oval1 {
+  border-radius: 50px;
+  background: #73AD21;
+  width: 530px;
+  height: 40px;  
+  color: white;
+  font-family:serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.oval2 {
+  border-radius: 50px;
+  background: #73AD21;
+  width: 550px;
+  height: 40px;  
+  color: white;
+  font-family:serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.oval3 {
+  border-radius: 50px;
+  background: #73AD21;
+  width: 410px;
+  height: 40px;  
+  color: white;
+  font-family:serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.oval4 {
+  border-radius: 50px;
+  background: #73AD21;
+  width: 950px;
+  height: 40px;  
+  color: white;
+  font-family:serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+
 </style>
 </head>
 <body>
@@ -72,32 +153,52 @@ margin-right: 100px;
   
   <!-- Links -->
   <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" id="font" href="#home" style="margin-left:25px;">Home</a>
+    <li>
+      <a id="font" href="#home" style="margin-left:25px; font-weight:bold;">Home</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" id="font" href="#about" style="margin-left:25px">AboutMe</a>
+    <li>
+      <a id="font" href="#aboutme" style="margin-left:25px; font-weight:bold;">AboutMe</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" id="font" href="#info" style="margin-left: 25px">Skills</a>
+    <li>
+      <a id="font" href="#skills" style="margin-left: 25px; font-weight:bold;">Skills</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" id="font" href="#info" style="margin-left:25px" >Projects</a>
+    <li>
+      <a id="font" href="#projects" style="margin-left:25px; font-weight:bold;" >Projects</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" id="oval" href="#contact" style="margin-left:550px">Contact</a>
+    <li>
+      <a class="oval" href="#contact" style="margin-left:450px; font-weight:bold;">Contact</a>
     </li>
   </ul>
+
+	<div class="burger" style="background-color: white;">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+
 </nav>
 <hr>
 
 
 <img src="rushi.jfif" class="img-fluid" id="textwrap" width="375" height="400" style="margin-left:200px">
-<h1 style="font-family:verdana; font-size: 80px;">Rushikesh Metkar</h1>
+
 <br>
-<h4> ~ First year UG student at<br> &nbsp &nbspElectrical Engineering Department,<br> &nbsp &nbspIIT Bombay
-<br><br>This is my homepage where I've described about myself,<br> my skills, some projects that I've done.
-<br>Also you can find my contact details here. 
+
+	<h1 id="home" style="font-family:verdana; font-size: 80px;">Rushikesh Metkar</h1>
+
+<br>
+<br>
+<br>
+
+	<h4> ~ First year UG student at<br> &nbsp &nbspElectrical Engineering Department,<br> &nbsp &nbspIIT Bombay
+
+<br>
+<br>
+<br>
+<br>
+
+	This is my homepage where I've described about myself,<br> my skills, some projects that I've done.
+	<br>Also you can find my contact details here. 
 </h4> 
 
 <hr>
@@ -105,29 +206,89 @@ margin-right: 100px;
 <br>
 <br>
 
+
+<div class="textwrap1">
+	<h3 style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700;" id="aboutme">Hobbies</h3>
+		<p>
+		<ul style="color:white; font-size: 18px;">
+			<li>Being an Electrical engineer I'm a tech enthusiast.<br> So whenever I am free I utilize my time to explore tech related stuff.</li>
+			<li>In sports I'm a Rohit Sharma fan, and thus I love to watchand play cricket.<br> Also Squash is yet another sport of my interest which I had taken as NSO<br> in the First year.</li>
+			<li>Also I have a keen interest in listening songs.</li>
+		</ul>
+
+<br>
+
+
+
+		</p>
+</div>
+
+<div>
+	<h3 style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700;">Ambitions</h3>
+		<p>
+		<ul style="color:white; font-size: 18px;">
+			<li>A famous quote is that <b><i>"Great ambition is the passion of a great character."</i></b></li>
+			<li>Working as an electrical engineer can allow me to make life easier for others and allow me to impact society in a positive way.<br></li>
+			<li>Also I participated in <b>ITSP</b> where me and my team had made a device and an app that provides information of any victim who
+				has met with an accident, and thus provide medical help to the victim as soon as possible.<br></li>
+			<li>Thus my ambitions in life are to make other's life more easy and become a role model for the society.</li>
+		</p> 
+</div>
+
+
+	<h3 style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700; margin-left:350px; ">Other Interests</h3>
+	<p style="font-size: 18px; margin-left: 200px;">
+	Also I have started a YouTube channel with Two of my wingies. The link of the channel is given below.<br>
+		<a href="https://www.youtube.com/channel/UCZkNflm8KwOa-CJWXowRnOg">My YouTube Channel</a>
+	<br>
+	In this channel We've described about the life of IIT-B. Although there is only one video but in the future we are going to add some<br> 
+		fascinating videos about the life in the insti.<br> So if you like the video please like, share and subscribe
+</p>
+
+<hr>
+
+<h2 style="color: white; margin-left: 50px; font-family: Montserrat; font-size: 50px;" id="skills"><img src="tech.jfif" width="50px" height="50px">&nbsp&nbsp Technical Skills</h2>
+<ul style="color:white; font-size: 18px; margin-top:10px; margin-left:150px;">
+<li class="oval1"><b>Web Development :</b> HTML, CSS, Bootstrap, Js</li><br>
+<li class="oval2"><b>Programming Languages :</b> C++, Python, LaTeX</li><br>
+<li class="oval3"><b>App Development :</b> Android studio</li><br>
+<li class="oval4"><b>Softwares :</b> AutoCAD, SolidWorks, Arduino, Android studio, Adobe Premeire Pro, Matlab</li><br>
+</ul>
+<h2 style="color: white; margin-left: 50px; font-family: Montserrat; font-size: 50px;" id="skills"><img src="ec.jfif" width="50px" height="50px">&nbsp&nbsp Extra-curriculars</h2>
+<ul style="color:white; font-size: 18px; margin-top:10px; margin-left:150px;">
+<li>Completed one year long course of National Sports Organisation in Squash, 2019-2020</li>
+<li>Participated in various competitions like RC Plane and Line Follower conducted by the Institute Technical Council.</li>
+<li>Completed the Aerial Robotics Workshop organised by Aeromodelling club, IIT Bombay.</li>
+<li>Received Gold medal at School level in 3rd,8th and 9th SOF-International Mathematics Olympiad
+and 18th SOF-National Science Olympiad and Silver medal at School level in 7th SOF-International
+Mathematics Olympiad.</li>
+</ul>
+<hr>
+<h2 style="text-align: center; font-family: verdana; font-size:45px; color: white; text-shadow: 5px 5px 7px red">Photo Gallery</h2>
+<form
+  action="https://formspree.io/mbjzqjga"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
+
+<br>
 <br>
 <br>
 <br>
 
-<h3 style="background-color:blue" class="inset" id="department">Department</h3>
-<p>Currently I'm first year UG student at <b>Electrical Engineering Department</b> in <b>IIT Bombay</b></p>
-<hr>
-<h3 style="background-color:blue" class="outset" id="hobbies">Hobbies</h3>
-<p><ul style="color:white"><li>Being an Electrical engineer I'm a tech enthusiast. So whenever I am free I utilize my time to explore tech related stuff.</li><li>
-In sports I'm a Rohit Sharma fan, and thus I love to watchand play cricket. Also Squash is yet another sport of my interest which I had taken as NSO in the First year.</li><li>
-Also I have a keen interest in listening songs.</li></ul>
-</p><hr>
-<h3 style="background-color:blue" class="dotted" id="ambitions">Ambitions</h3>
-<p>A famous quote is that <b><i>"Great ambition is the passion of a great character."</i></b><br>
-Working as an electrical engineer can allow me to make life easier for others and allow me to impact society in a positive way.<br>
-Also I participated in <b>ITSP</b> where me and my team had made a device and an app that provides information of any victim who
-has met with an accident, and thus provide medical help to the victim as soon as possible.<br>
-Thus my ambitions in life are to make other's life more easy and become a role model for the society.</p> 
-<hr>
-<h3 style="background-color:blue" class="dashed" id="otherinterests">Other Interests</h3>
-<p>Also I have started a YouTube channel with Two of my wingies. The link of the channel is given below.<br>
-<a href="https://www.youtube.com/channel/UCZkNflm8KwOa-CJWXowRnOg">My YouTube Channel</a>
-<p>In this channel We've described about the life of IIT-B. Although there is only one video but in the future we are going to add some 
-fascinating videos about the life in the insti.<br> So if you like the video please like, share and subscribe</p>
+<img src="web1.png"  style="width:350px; height:150px;" class="one">
+
 </body>
 </html>
