@@ -57,7 +57,7 @@ background-color: white;
 .navbar-nav {
 display: flex;
 list-style: none;
-width: 50%;
+width: 70%;
 height:100%;
 justify-content: space-around;
 align-items: center;
@@ -99,13 +99,35 @@ background : lightblue;
 height: 100vh;
 width: 100%;
 flex-direction: column;
-clip-path: circle(100px at 90% -15%);
--webkit-clip-path: circle(100px at 90% -15%);
+clip-path: circle(100px at 100% -15%);
+-webkit-clip-path: circle(100px at 100% -15%);
 transition: all 1s ease-out;
 }
 .navbar-nav.open {
-clip-path: circle(1000px at 90% -15%);
--webkit-clip-path: circle(1000px at 90% -15%);
+clip-path: circle(1000px at 100% -15%);
+-webkit-clip-path: circle(1000px at 100% -15%);
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+.img-fluid {
+width: 70%;
+height: 80%;
+margin: auto;
+}
+
+}
+
+
+@media screen and (max-width: 768px){
+
+div.n {
+  border-radius: 50px;
+  background-color: lightgrey;
+  width: 300px;
+  padding: 25px;
 }
 
 }
@@ -129,12 +151,11 @@ img.one {
   margin-right: auto;
 }
 
-
 .oval1 {
   border-radius: 50px;
   background: #73AD21;
-  width: 530px;
-  height: 40px;  
+  width: 55%;
+  height: auto;  
   color: white;
   font-family:serif;
   font-size: 25px;
@@ -144,8 +165,8 @@ img.one {
 .oval2 {
   border-radius: 50px;
   background: #73AD21;
-  width: 550px;
-  height: 40px;  
+  width: 55%;
+  height: auto;  
   color: white;
   font-family:serif;
   font-size: 25px;
@@ -155,8 +176,8 @@ img.one {
 .oval3 {
   border-radius: 50px;
   background: #73AD21;
-  width: 410px;
-  height: 40px;  
+  width: 45%;
+  height: auto;  
   color: white;
   font-family:serif;
   font-size: 25px;
@@ -166,8 +187,8 @@ img.one {
 .oval4 {
   border-radius: 50px;
   background: #73AD21;
-  width: 950px;
-  height: 40px;  
+  width: 85%;
+  height: auto;  
   color: white;
   font-family:serif;
   font-size: 25px;
@@ -196,10 +217,9 @@ animation-iteration-count: infinite;
 div.n {
   border-radius: 50px;
   background-color: lightgrey;
-  width: 900px;
-  border-shadow: 5px 5px 5px 5px solid green;
+  width: 65%;
   padding: 50px;
-  margin-left: 300px;
+  margin: auto;
 }
 
 .footer {
@@ -213,12 +233,16 @@ text-align: center;
 </style>
 </head>
 <body>
-<h2 style="text-align:center; color:blue; margin:10px;">Welcome to my home page</h2>
+
+
+<h2 style="text-align:center; color:blue;">Welcome to my home page</h2>
 
 
 <nav>
   <!-- Brand/logo -->
-  
+ <a class="navbar-brand" href="#" target="_blank">
+    <img src="web1.png" alt="logo" style="width:200px;">
+  </a> 
   
 	<div class="hamburger">
 		<div class="line"></div>
@@ -228,20 +252,20 @@ text-align: center;
 
   <!-- Links -->
   <ul class="navbar-nav">
-    <li>
-      <a href="#home">Home</a>
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
     </li>
-    <li>
-      <a href="#aboutme">AboutMe</a>
+    <li class="nav-item">
+      <a class="nav-link" href="#aboutme">AboutMe</a>
     </li>
-    <li>
-      <a href="#skills">Skills</a>
+    <li class="nav-item">
+      <a class="nav-link" href="#skills">Skills</a>
     </li>
-    <li>
-      <a href="#gallery">Gallery</a>
+    <li class="nav-item">
+      <a class="nav-link" href="#gallery">Gallery</a>
     </li>
-    <li>
-      <a href="#contact">Contact</a>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
     </li>
   </ul>
 
@@ -259,7 +283,7 @@ navLinks.classList.toggle("open");
 <hr>
 
 
-<img src="rushi.jfif" class="img-fluid" id="textwrap" width="375" height="400" style="margin-left:200px">
+<img src="rushi.jfif" class="img-fluid" id="textwrap" width="375" height="400">
 
 <br>
 
@@ -315,12 +339,12 @@ navLinks.classList.toggle("open");
 </div>
 
 
-	<h3 style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700; margin-left:350px; ">Other Interests</h3>
-	<p style="font-size: 18px; margin-left: 200px;">
+	<h3 class="heading" style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700; text-align: center">Other Interests</h3>
+	<p class="info" style="font-size: 18px; text-align: center;">
 	Also I have started a YouTube channel with Two of my wingies. The link of the channel is given below.<br>
 		<a href="https://www.youtube.com/channel/UCZkNflm8KwOa-CJWXowRnOg">My YouTube Channel</a>
 	<br>
-	In this channel We've described about the life of IIT-B. Although there is only one video but in the future we are going to add some<br> 
+	In this channel We've described about the life of IIT-B. Although there is only one video,<br> but in the future we are going to add some<br> 
 		fascinating videos about the life in the insti.<br> So if you like the video please like, share and subscribe
 </p>
 
@@ -335,12 +359,13 @@ navLinks.classList.toggle("open");
 		<li class="oval4"><b>Softwares :</b> AutoCAD, SolidWorks, Arduino, Android studio, Adobe Premeire Pro, Matlab</li><br>
 	</ul>
 
+	
 
 <h2 style="color: white; margin-left: 50px; font-family: Montserrat; font-size: 50px;" id="skills"><img src="ec.jfif" width="50px" height="50px">&nbsp&nbsp Extra-curriculars</h2>
 	<ul style="color:white; font-size: 22px; margin-top:10px; margin-left:150px; margin-right: 50px" id="Transition">
 		<li>Completed one year long course of National Sports Organisation in Squash, 2019-2020</li>
-		<li>Participated in various competitions like RC Plane and Line Follower conducted by the Institute Technical Council.</li>
-		<li>Completed the Aerial Robotics Workshop organised by Aeromodelling club, IIT Bombay.</li>
+		<li>Participated in various competitions like XLR8, RC Plane and Line Follower conducted by the Institute Technical Council.</li>
+		<li>Currently doing the web-development & LaTeX courses of Online Learner's Space.</li>
 		<li>Received Gold medal at School level in 3rd,8th and 9th SOF-International Mathematics Olympiad
 		and 18th SOF-National Science Olympiad and Silver medal at School level in 7th SOF-International
 		Mathematics Olympiad.</li>
@@ -424,18 +449,20 @@ $(document).ready(function(){
         >
 
 <div class="n">
-	  <label style="font-family: Montserrat; font-weight:800; font-size: 15px;">
+	  <label style="font-family: Montserrat; font-weight:800; font-size: 15px; margin:auto;">
    		Your Name:
-   		 <input type="text" name="name" style="width:400px;" >
+   		 <input type="text" name="name" style="width:auto" >
+
 <hr>	 </label>
-	 <label style="font-family: Montserrat; font-weight:800; font-size: 15px">
+<br>
+	 <label style="font-family: Montserrat; font-weight:800; font-size: 15px; margin:auto;">
 		Your email:
-   		 <input type="text" name="_replyto" style="width:400px;" >
+   		 <input type="text" name="_replyto"style="width:auto"  >
 	  </label>
 <hr>
- 	 <label style="font-family: Montserrat; font-weight:800; font-size: 15px">
+ 	 <label style="font-family: Montserrat; font-weight:800; font-size: 15px; margin:auto;">
    		 Your message:<br>
-  		  <textarea name="message" style="width:600px; height:100px;"></textarea>
+  		  <textarea name="message" style="width:auto; height:100px;"></textarea>
  	 </label>
 
 <hr>
