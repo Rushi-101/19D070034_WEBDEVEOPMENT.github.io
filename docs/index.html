@@ -50,7 +50,7 @@ h3 {
 
 
 nav {
-height: 15vh;
+height: 21vh;
 background-color: white;
 }
 
@@ -67,6 +67,8 @@ margin-left: auto;
 .navbar-nav li a{
 font-size: 25px;
 font-weight: bold;
+color: green;
+text-shadow: 4px 4px 3px lightgreen;
 }
 
 
@@ -211,7 +213,7 @@ animation-iteration-count: infinite;
 
 .carousel-inner img {
     width: 70%;
-    height: 40%;
+    height: auto;
   }
 
 div.n {
@@ -241,7 +243,7 @@ text-align: center;
 <nav class="navbar navbar-expand-sm bg-white navbar-white>
   <!-- Brand/logo -->
  <a class="navbar-brand" href="#" target="_blank">
-    <img src="web1.png" alt="logo" style="width:200px;">
+    <img src="web1.png" alt="logo" style="width:300px;">
   </a> 
   
 	<div class="hamburger">
@@ -310,24 +312,23 @@ navLinks.classList.toggle("open");
 <br>
 
 
-<div class="textwrap1">
-	<h3 style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700;" id="aboutme">Hobbies</h3>
+<div class="container">
+<div class="row">
+<div class="column">
+	<h3 style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700;  text-decoration-line: underline;
+  		text-decoration-style: dotted;" id="aboutme">Hobbies</h3>
 		<p>
 		<ul style="color:white; font-size: 18px;">
 			<li>Being an Electrical engineer I'm a tech enthusiast.<br> So whenever I am free I utilize my time to explore tech related stuff.</li>
 			<li>In sports I'm a Rohit Sharma fan, and thus I love to watchand play cricket.<br> Also Squash is yet another sport of my interest which I had taken as NSO<br> in the First year.</li>
 			<li>Also I have a keen interest in listening songs.</li>
 		</ul>
-
-<br>
-
-
-
 		</p>
 </div>
-
-<div>
-	<h3 style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700;">Ambitions</h3>
+<div class="column">
+		
+	<h3 style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700;  text-decoration-line: underline;
+  		text-decoration-style: dotted;">Ambitions</h3>
 		<p>
 		<ul style="color:white; font-size: 18px;">
 			<li>A famous quote is that <b><i>"Great ambition is the passion of a great character."</i></b></li>
@@ -337,17 +338,19 @@ navLinks.classList.toggle("open");
 			<li>Thus my ambitions in life are to make other's life more easy and become a role model for the society.</li>
 		</p> 
 </div>
-
-
-	<h3 class="heading" style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700; text-align: center">Other Interests</h3>
-	<p class="info" style="font-size: 18px; text-align: center;">
+<div class="column">
+	<h3 class="heading" style="color:red; font-family: Montserrat; font-size: 50px; font-weight: 700; text-decoration-line: underline;
+  		text-decoration-style: dotted;">Other Interests</h3>
+	<p class="info" style="font-size: 18px;">
 	Also I have started a YouTube channel with Two of my wingies. The link of the channel is given below.<br>
 		<a href="https://www.youtube.com/channel/UCZkNflm8KwOa-CJWXowRnOg">My YouTube Channel</a>
 	<br>
 	In this channel We've described about the life of IIT-B. Although there is only one video,<br> but in the future we are going to add some<br> 
 		fascinating videos about the life in the insti.<br> So if you like the video please like, share and subscribe
 </p>
-
+</div>
+</div>
+</div>
 <hr>
 
 <h2 style="color: white; margin-left: 50px; font-family: Montserrat; font-size: 50px;" id="skills"><img src="tech.jfif" width="50px" height="50px">&nbsp&nbsp Technical Skills</h2>
@@ -362,7 +365,7 @@ navLinks.classList.toggle("open");
 	
 
 <h2 style="color: white; margin-left: 50px; font-family: Montserrat; font-size: 50px;" id="skills"><img src="ec.jfif" width="50px" height="50px">&nbsp&nbsp Extra-curriculars</h2>
-	<ul style="color:white; font-size: 22px; margin-top:10px; margin-left:50px; margin-right: 50px" id="Transition">
+	<ul style="color:white; font-size: 22px; margin-top:10px; margin-left:50px; margin-right: 50px; padding:30px;" id="Transition">
 		<li>Completed one year long course of National Sports Organisation in Squash, 2019-2020</li>
 		<li>Participated in various competitions like XLR8, RC Plane and Line Follower conducted by the Institute Technical Council.</li>
 		<li>Currently doing the web-development & LaTeX courses of Online Learner's Space.</li>
